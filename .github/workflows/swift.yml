@@ -10,8 +10,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Danger
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14' # Specify Node.js version
+
+      - name: Install Danger JS
+        run: npm install -g danger
+
+      - name: Run Danger Swift
         run: swift run danger-swift ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
