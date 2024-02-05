@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B86658CF2B7150D10088DF30 /* Stringify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86658CE2B7150D10088DF30 /* Stringify.swift */; };
+		B86658CF2B7150D10088DF30 /* Stringify2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86658CE2B7150D10088DF30 /* Stringify2.swift */; };
 		B8956BDB2B713A860026365C /* DangerTest2024App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BDA2B713A860026365C /* DangerTest2024App.swift */; };
 		B8956BDD2B713A860026365C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BDC2B713A860026365C /* ContentView.swift */; };
 		B8956BDF2B713A880026365C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8956BDE2B713A880026365C /* Assets.xcassets */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B86658CE2B7150D10088DF30 /* Stringify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stringify.swift; sourceTree = "<group>"; };
+		B86658CE2B7150D10088DF30 /* Stringify2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stringify2.swift; sourceTree = "<group>"; };
 		B8956BD72B713A860026365C /* DangerTest2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangerTest2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8956BDA2B713A860026365C /* DangerTest2024App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024App.swift; sourceTree = "<group>"; };
 		B8956BDC2B713A860026365C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			children = (
 				B8956C052B713CB00026365C /* Package.swift */,
 				B8956C042B713B020026365C /* Danger  */,
-				B8956BD92B713A860026365C /* DangerTest2024 */,
+				B8956BD92B713A860026365C /* DangerTest2023 */,
 				B8956BEA2B713A880026365C /* DangerTest2024Tests */,
 				B8956BF42B713A880026365C /* DangerTest2024UITests */,
 				B8956BD82B713A860026365C /* Products */,
@@ -96,16 +96,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8956BD92B713A860026365C /* DangerTest2024 */ = {
+		B8956BD92B713A860026365C /* DangerTest2023 */ = {
 			isa = PBXGroup;
 			children = (
-				B86658CE2B7150D10088DF30 /* Stringify.swift */,
+				B86658CE2B7150D10088DF30 /* Stringify2.swift */,
 				B8956BDA2B713A860026365C /* DangerTest2024App.swift */,
 				B8956BDC2B713A860026365C /* ContentView.swift */,
 				B8956BDE2B713A880026365C /* Assets.xcassets */,
 				B8956BE02B713A880026365C /* Preview Content */,
 			);
-			path = DangerTest2024;
+			path = DangerTest2023;
 			sourceTree = "<group>";
 		};
 		B8956BE02B713A880026365C /* Preview Content */ = {
@@ -276,7 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8956BDD2B713A860026365C /* ContentView.swift in Sources */,
-				B86658CF2B7150D10088DF30 /* Stringify.swift in Sources */,
+				B86658CF2B7150D10088DF30 /* Stringify2.swift in Sources */,
 				B8956BDB2B713A860026365C /* DangerTest2024App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

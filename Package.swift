@@ -3,30 +3,35 @@
 
 import PackageDescription
 
+// swift-tools-version:5.3
+import PackageDescription
+
 let package = Package(
-    name: "dangerTest2024",
+    name: "DangerTest2024",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
+        // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "DangerTest2024",
             targets: ["DangerTest2024"]),
     ],
     dependencies: [
- 
-          .package(url: "https://github.com/danger/swift.git", from: "3.18.0"), // dev
-          // Danger Plugins
-          
-      ],
+        // Dependencies declare other packages that this package depends on.
+        // Here you need to specify the URL to the Danger Swift repository and the version range.
+        .package(name: "Danger", url: "https://github.com/danger/swift.git", .upToNextMajor(from: "3.0.0")),
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-
-        .testTarget(
-            name: "DangerTest2024Tests",
-            dependencies: ["DangerTest2024"]),
-        .target(name: "DangerTest2024", dependencies: [
-            .product(name: "Danger",package: "swift")
-            
-        ], path: "DangerTest2024", sources: ["Stringify.swift"]),
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+        .target(
+            name: "DangerTest2024",
+            dependencies: [
+                .product(name: "Danger", package: "Danger") // Ensure this refers correctly to the Danger package
+            ],
+            path: "DangerTest2023", // Adjust this path to where your source files are located
+            sources: ["Stringify2.swift"] // Specify the source files you want to include in this target
+        ),
     ]
 )
+
+
+
