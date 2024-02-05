@@ -1,29 +1,23 @@
 # This workflow will build a Swift project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-name: Run Danger Swift
+name: CI
 
-on: pull_request
+on: [pull_request]
 
 jobs:
-  danger:
-    name: Execute Danger Swift
-    runs-on: ubuntu-latest
+  build:
+    runs-on: macos-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0 # Fetch all history for Danger to have access to the full git history
+      - uses: actions/checkout@v2
 
-      - name: Set up Swift
-        uses: actions/setup-swift@v1
-        with:
-          swift-version: '5.5' # Adjust to match the Swift version you're using
+      - name: Build
+        run: swift build
 
-      - name: Resolve Package Dependencies
-        run: swift package resolve
+      - name: Test
+        run: swift test
 
-      - name: Run Danger Swift
-        run: swift run danger-swift ci
+      - name: Danger
+        run: danger-swift ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
