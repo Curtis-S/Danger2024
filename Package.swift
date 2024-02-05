@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
  
-          .package(url: "https://github.com/danger/swift.git", from: "3.0.0"), // dev
+          .package(url: "https://github.com/danger/swift.git", from: "3.18.0"), // dev
           // Danger Plugins
           
       ],
