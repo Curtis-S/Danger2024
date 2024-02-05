@@ -10,14 +10,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Build
-        run: swift build
-
-      - name: Test
-        run: swift test
-
+      
       - name: Danger
-        run: danger-swift ci
+        run: swift run danger-swift ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
