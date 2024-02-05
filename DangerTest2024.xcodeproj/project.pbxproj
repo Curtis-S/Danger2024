@@ -14,6 +14,7 @@
 		B8956BEC2B713A880026365C /* DangerTest2024Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BEB2B713A880026365C /* DangerTest2024Tests.swift */; };
 		B8956BF62B713A880026365C /* DangerTest2024UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BF52B713A880026365C /* DangerTest2024UITests.swift */; };
 		B8956BF82B713A880026365C /* DangerTest2024UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BF72B713A880026365C /* DangerTest2024UITestsLaunchTests.swift */; };
+		B8956C062B713CB00026365C /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956C052B713CB00026365C /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B8956BF12B713A880026365C /* DangerTest2024UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangerTest2024UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8956BF52B713A880026365C /* DangerTest2024UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024UITests.swift; sourceTree = "<group>"; };
 		B8956BF72B713A880026365C /* DangerTest2024UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8956C052B713CB00026365C /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 		B8956BCE2B713A860026365C = {
 			isa = PBXGroup;
 			children = (
+				B8956C052B713CB00026365C /* Package.swift */,
+				B8956C042B713B020026365C /* Danger  */,
 				B8956BD92B713A860026365C /* DangerTest2024 */,
 				B8956BEA2B713A880026365C /* DangerTest2024Tests */,
 				B8956BF42B713A880026365C /* DangerTest2024UITests */,
@@ -125,6 +129,13 @@
 				B8956BF72B713A880026365C /* DangerTest2024UITestsLaunchTests.swift */,
 			);
 			path = DangerTest2024UITests;
+			sourceTree = "<group>";
+		};
+		B8956C042B713B020026365C /* Danger  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Danger ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8956C062B713CB00026365C /* Package.swift in Sources */,
 				B8956BDD2B713A860026365C /* ContentView.swift in Sources */,
 				B8956BDB2B713A860026365C /* DangerTest2024App.swift in Sources */,
 			);
