@@ -11,15 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14' # Specify Node.js version
+      - name: Select Xcode Version
+        run: sudo xcode-select -switch /Applications/Xcode_12.4.app # Update Xcode version as needed
 
-      - name: Install Danger JS
-        run: npm install -g danger
-
-      - name: Run Danger Swift
+      - name: Run Danger
         run: swift run danger-swift ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
