@@ -27,6 +27,6 @@ let package = Package(
         .target(name: "DangerTest2024", dependencies: [
             .product(name: "Danger",package: "swift")
             
-        ], path: "Artsy", sources: ["Stringify.swift"]),
+        ], path: "DangerTest2024", sources: ["Stringify.swift"]),
     ]
 )
