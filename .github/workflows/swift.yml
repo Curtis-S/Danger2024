@@ -7,12 +7,16 @@ on:
 jobs:
   build:
     name: Danger JS
-      runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v1
-          - name: Danger
-        uses: danger/swift@3.18.0
-  env:
-GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Swift
+        uses: actions/setup-swift@v1
+        with:
+          swift-version: '5.3'
+      - name: Install and Run Danger
+        run: |
+          swift run danger-swift ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    
