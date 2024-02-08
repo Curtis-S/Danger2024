@@ -35,23 +35,46 @@ import PackageDescription
 //)
 
 
+//let package = Package(
+//    name: "DangerTest2024",
+//    dependencies: [
+//        // This is the only dependency you need if you're just using Danger Swift.
+//        .package(url: "https://github.com/danger/swift.git", from: "3.0.0"),
+//    ],
+//    targets: [
+//        // Define a target that includes your Dangerfile and any other Swift files related to Danger.
+//        .target(
+//            name: "DangerDependencies", // This target is just for compiling any related files.
+//            dependencies: [
+//                .product(name: "Danger", package: "swift"), // Use Danger directly from its package.
+//            ],
+//            path: "DangerTest2023", // Adjust this path to where your Danger-related files are located.
+//            sources: ["Stringify2.swift"] // List any Swift source files you use for Danger here.
+//        ),
+//        // If you have executable code in your project that isn't related to Danger, define another target for it as necessary.
+//    ]
+//)
+//
+
 let package = Package(
-    name: "DangerTest2024",
+    name: "DangerNew2024",
+    products: [
+        .library(
+            name: "DangerDeps", // Danger needs to build this library, then its name needs to start with DangerDeps in order to be identified by Danger
+            type: .dynamic, // If the type is not dynamic Danger can not link it to the Dangerfile compilation
+            targets: ["DangerNew2024Target"]),
+    ],
     dependencies: [
-        // This is the only dependency you need if you're just using Danger Swift.
-        .package(url: "https://github.com/danger/swift.git", from: "3.0.0"),
+        .package(name: "Danger", url: "https://github.com/danger/swift.git", from: "3.0.0")
     ],
     targets: [
-        // Define a target that includes your Dangerfile and any other Swift files related to Danger.
         .target(
-            name: "DangerDependencies", // This target is just for compiling any related files.
+            name: "DangerNew2024Target",
             dependencies: [
-                .product(name: "Danger", package: "swift"), // Use Danger directly from its package.
+                .product(name: "Danger", package: "Danger")
             ],
-            path: "DangerTest2023", // Adjust this path to where your Danger-related files are located.
-            sources: ["Stringify2.swift"] // List any Swift source files you use for Danger here.
+            path: "DangerTest2023",
+            sources: ["Stringify2.swift"]
         ),
-        // If you have executable code in your project that isn't related to Danger, define another target for it as necessary.
     ]
 )
-

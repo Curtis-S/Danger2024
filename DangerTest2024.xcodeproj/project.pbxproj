@@ -78,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				B8956C052B713CB00026365C /* Package.swift */,
-				B8956C042B713B020026365C /* Danger  */,
 				B8956BD92B713A860026365C /* DangerTest2023 */,
 				B8956BEA2B713A880026365C /* DangerTest2024Tests */,
 				B8956BF42B713A880026365C /* DangerTest2024UITests */,
@@ -131,13 +130,6 @@
 				B8956BF72B713A880026365C /* DangerTest2024UITestsLaunchTests.swift */,
 			);
 			path = DangerTest2024UITests;
-			sourceTree = "<group>";
-		};
-		B8956C042B713B020026365C /* Danger  */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Danger ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DangerTest2024/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -468,7 +460,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DangerTest2024/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
