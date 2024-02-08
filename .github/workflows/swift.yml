@@ -11,9 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Select Xcode Version
-        run: sudo xcode-select -switch /Applications/Xcode_12.4.app # Update Xcode version as needed
-
       - name: Run Danger
         run: swift run danger-swift ci
         env:
