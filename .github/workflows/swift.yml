@@ -7,30 +7,12 @@ on: [pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
+
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0  # Ensures GitHub Actions checks out the entire git history for Danger to work correctly.
+      - uses: actions/checkout@v2
 
-    # Install Node.js
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14' # Specify the Node.js version you want to use
-
-    # Install Danger JS
-    - name: Install Danger JS
-      run: npm install -g danger
-
-    # Your step to install Swift and dependencies
-    - name: Setup Swift environment and install dependencies
-      run: |
-        # Your commands to setup Swift and install any dependencies
-        # For example, installing Swift or running `swift build` if necessary
-
-    # Run Danger Swift
-    - name: Run Danger Swift
-      run: swift run danger-swift ci
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Danger
+        run: swift run danger-swift ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
