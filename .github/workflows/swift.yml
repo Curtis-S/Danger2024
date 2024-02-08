@@ -1,18 +1,34 @@
 # This workflow will build a Swift project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
 name: CI
 
 on: [pull_request]
 
 jobs:
   build:
-    runs-on: macos-latest
-
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # Ensures GitHub Actions checks out the entire git history for Danger to work correctly.
 
-      - name: Run Danger
-        run: swift run danger-swift ci
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # Install Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Specify the Node.js version you want to use
+
+    # Install Danger JS
+    - name: Install Danger JS
+      run: npm install -g danger
+
+    # Your step to install Swift and dependencies
+    - name: Setup Swift environment and install dependencies
+      run: |
+        # Your commands to setup Swift and install any dependencies
+        # For example, installing Swift or running `swift build` if necessary
+    # Run Danger Swift
+    - name: Run Danger Swift
+      run: swift run danger-swift ci
+      env:
+        GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
