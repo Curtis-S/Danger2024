@@ -19,9 +19,6 @@ jobs:
       - name: Install Danger JS
         run: npm install -g danger
 
-      - name: Build
-        run: swift build
-
       - name: Run Danger
         run: swift run danger-swift ci
         env:
