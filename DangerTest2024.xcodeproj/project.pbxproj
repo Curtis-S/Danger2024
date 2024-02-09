@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B859E6042B7621E100B0B158 /* FileToTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B859E6032B7621E100B0B158 /* FileToTest.swift */; };
 		B86658CF2B7150D10088DF30 /* Stringify2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86658CE2B7150D10088DF30 /* Stringify2.swift */; };
 		B8956BDB2B713A860026365C /* DangerTest2024App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BDA2B713A860026365C /* DangerTest2024App.swift */; };
 		B8956BDD2B713A860026365C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BDC2B713A860026365C /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B859E6032B7621E100B0B158 /* FileToTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileToTest.swift; sourceTree = "<group>"; };
 		B86658CE2B7150D10088DF30 /* Stringify2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stringify2.swift; sourceTree = "<group>"; };
 		B8956BD72B713A860026365C /* DangerTest2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangerTest2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8956BDA2B713A860026365C /* DangerTest2024App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024App.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				B8956BDC2B713A860026365C /* ContentView.swift */,
 				B8956BDE2B713A880026365C /* Assets.xcassets */,
 				B8956BE02B713A880026365C /* Preview Content */,
+				B859E6032B7621E100B0B158 /* FileToTest.swift */,
 			);
 			path = DangerTest2023;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				B8956BDD2B713A860026365C /* ContentView.swift in Sources */,
 				B86658CF2B7150D10088DF30 /* Stringify2.swift in Sources */,
+				B859E6042B7621E100B0B158 /* FileToTest.swift in Sources */,
 				B8956BDB2B713A860026365C /* DangerTest2024App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -65,13 +65,15 @@ let package = Package(
             targets: ["DangerNew2024Target"]),
     ],
     dependencies: [
-        .package(name: "Danger", url: "https://github.com/danger/swift.git", from: "3.0.0")
+        .package(name: "Danger", url: "https://github.com/danger/swift.git", from: "3.0.0"),
+        .package(url: "https://github.com/f-meloni/danger-swift-coverage", from: "1.2.1")
     ],
     targets: [
         .target(
             name: "DangerNew2024Target",
             dependencies: [
-                .product(name: "Danger", package: "Danger")
+                .product(name: "Danger", package: "Danger"),
+                .product(name: "DangerSwiftCoverage",package: "danger-swift-coverage")
             ],
             path: "DangerTest2023",
             sources: ["Stringify2.swift"]
