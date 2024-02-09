@@ -19,6 +19,10 @@ jobs:
       - name: Install Danger JS
         run: npm install -g danger
 
+      - name: Build and Test
+        run: |
+          xcodebuild -scheme DangerTest2024 -project DangerTest2024.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15,OS=16.0' test
+
       - name: Run Danger
         run: swift run danger-swift ci
         env:
