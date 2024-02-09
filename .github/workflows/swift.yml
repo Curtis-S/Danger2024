@@ -21,7 +21,8 @@ jobs:
 
       - name: Build and Test
         run: |
-          xcodebuild -scheme DangerTest2024 -project DangerTest2024.xcodeproj -destination platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device test
+          xcodebuild -scheme DangerTest2024 -project DangerTest2024.xcodeproj 
+          test
 
       - name: Run Danger
         run: swift run danger-swift ci
