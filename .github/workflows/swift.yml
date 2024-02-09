@@ -21,8 +21,7 @@ jobs:
 
       - name: Build and Test
         run: |
-          xcodebuild -scheme DangerTest2024 -project DangerTest2024.xcodeproj 
-          test
+         xcodebuild test -scheme DangerSwiftCoverage-Package -derivedDataPath Build/ -enableCodeCoverage YES
 
       - name: Run Danger
         run: swift run danger-swift ci
