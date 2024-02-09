@@ -14,8 +14,6 @@
 		B8956BDF2B713A880026365C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8956BDE2B713A880026365C /* Assets.xcassets */; };
 		B8956BE22B713A880026365C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8956BE12B713A880026365C /* Preview Assets.xcassets */; };
 		B8956BEC2B713A880026365C /* DangerTest2024Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BEB2B713A880026365C /* DangerTest2024Tests.swift */; };
-		B8956BF62B713A880026365C /* DangerTest2024UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BF52B713A880026365C /* DangerTest2024UITests.swift */; };
-		B8956BF82B713A880026365C /* DangerTest2024UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8956BF72B713A880026365C /* DangerTest2024UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		B859E6032B7621E100B0B158 /* FileToTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileToTest.swift; sourceTree = "<group>"; };
+		B859E6052B766BD500B0B158 /* DangerTest2024.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DangerTest2024.xctestplan; sourceTree = "<group>"; };
 		B86658CE2B7150D10088DF30 /* Stringify2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stringify2.swift; sourceTree = "<group>"; };
 		B8956BD72B713A860026365C /* DangerTest2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangerTest2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8956BDA2B713A860026365C /* DangerTest2024App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024App.swift; sourceTree = "<group>"; };
@@ -46,8 +45,6 @@
 		B8956BE72B713A880026365C /* DangerTest2024Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangerTest2024Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8956BEB2B713A880026365C /* DangerTest2024Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024Tests.swift; sourceTree = "<group>"; };
 		B8956BF12B713A880026365C /* DangerTest2024UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangerTest2024UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8956BF52B713A880026365C /* DangerTest2024UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024UITests.swift; sourceTree = "<group>"; };
-		B8956BF72B713A880026365C /* DangerTest2024UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTest2024UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8956C052B713CB00026365C /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,10 +76,10 @@
 		B8956BCE2B713A860026365C = {
 			isa = PBXGroup;
 			children = (
+				B859E6052B766BD500B0B158 /* DangerTest2024.xctestplan */,
 				B8956C052B713CB00026365C /* Package.swift */,
 				B8956BD92B713A860026365C /* DangerTest2023 */,
 				B8956BEA2B713A880026365C /* DangerTest2024Tests */,
-				B8956BF42B713A880026365C /* DangerTest2024UITests */,
 				B8956BD82B713A860026365C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,15 +121,6 @@
 				B8956BEB2B713A880026365C /* DangerTest2024Tests.swift */,
 			);
 			path = DangerTest2024Tests;
-			sourceTree = "<group>";
-		};
-		B8956BF42B713A880026365C /* DangerTest2024UITests */ = {
-			isa = PBXGroup;
-			children = (
-				B8956BF52B713A880026365C /* DangerTest2024UITests.swift */,
-				B8956BF72B713A880026365C /* DangerTest2024UITestsLaunchTests.swift */,
-			);
-			path = DangerTest2024UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8956BF62B713A880026365C /* DangerTest2024UITests.swift in Sources */,
-				B8956BF82B713A880026365C /* DangerTest2024UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

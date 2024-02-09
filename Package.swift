@@ -57,7 +57,7 @@ import PackageDescription
 //
 
 let package = Package(
-    name: "DangerNew2024",
+    name: "",
     products: [
         .library(
             name: "DangerDeps", // Danger needs to build this library, then its name needs to start with DangerDeps in order to be identified by Danger
