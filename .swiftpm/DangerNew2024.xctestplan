@@ -1,0 +1,18 @@
+{
+  "configurations" : [
+    {
+      "id" : "F7109CCA-FDA1-4A94-A53C-C1C82CBA0850",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
