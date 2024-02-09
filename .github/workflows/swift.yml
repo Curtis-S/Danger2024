@@ -21,7 +21,7 @@ jobs:
 
       - name: Build and Test
         run: |
-          xcodebuild -scheme DangerTest2024 -project DangerTest2024.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15,OS=16.0' test
+          xcodebuild -scheme DangerTest2024 -project DangerTest2024.xcodeproj -destination 'platform=iOS ,name=iPhone 15' test
 
       - name: Run Danger
         run: swift run danger-swift ci
