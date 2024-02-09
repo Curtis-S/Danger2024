@@ -21,10 +21,9 @@ jobs:
 
       - name: Build and Test
         run: |
-         xcodebuild test -scheme DangerTest2024 -derivedDataPath Build/ -enableCodeCoverage YES
+          xcodebuild test -scheme DangerTest2024 -destination "platform=iOS Simulator,OS=latest,name=iPhone 15" -derivedDataPath Build/ -enableCodeCoverage YES
 
       - name: Run Danger
         run: swift run danger-swift ci
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
-
